@@ -1,0 +1,54 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fav-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#2563EB" stopOpacity="0.4" />
+      <stop offset="100%" stopColor="#0F172A" stopOpacity="0" />
+    </radialGradient>
+    <linearGradient id="fav-cab" x1="16" y1="16" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="50%" stopColor="#2563EB" />
+      <stop offset="100%" stopColor="#0F172A" />
+    </linearGradient>
+    <linearGradient id="fav-beam" x1="20" y1="40" x2="8" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.8" />
+      <stop offset="100%" stopColor="#06B6D4" stopOpacity="0" />
+    </linearGradient>
+    <linearGradient id="fav-beam-r" x1="44" y1="40" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.8" />
+      <stop offset="100%" stopColor="#06B6D4" stopOpacity="0" />
+    </linearGradient>
+  </defs>
+
+  {/* Chassis Badge Background */}
+  <rect width="64" height="64" rx="16" fill="#0F172A" stroke="#1E293B" stroke-width="1.5" />
+  <circle cx="32" cy="32" r="28" fill="url(#fav-glow)" />
+
+  {/* Perspective Highway Road */}
+  <path d="M24 44L10 60H54L40 44H24Z" fill="#1E293B" />
+  <line x1="32" y1="44" x2="32" y2="60" stroke="#FACC15" stroke-width="2" stroke-dasharray="3 3" />
+  <line x1="23" y1="44" x2="8" y2="60" stroke="#38BDF8" stroke-width="1.5" />
+  <line x1="41" y1="44" x2="56" y2="60" stroke="#38BDF8" stroke-width="1.5" />
+
+  {/* Headlight Beams */}
+  <polygon points="19,41 6,58 18,58 22,41" fill="url(#fav-beam)" />
+  <polygon points="45,41 58,58 46,58 42,41" fill="url(#fav-beam-r)" />
+
+  {/* Transport Truck Cab */}
+  <path d="M22 12C22 10 24 9 26 9H38C40 9 42 10 42 12L44 20H20L22 12Z" fill="#38BDF8" />
+  <rect x="18" y="20" width="28" height="23" rx="3" fill="url(#fav-cab)" stroke="#60A5FA" stroke-width="1" />
+  
+  {/* Windshield */}
+  <path d="M21 22H43L41 30H23L21 22Z" fill="#E0F2FE" />
+  <path d="M24 23L23 28" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" />
+
+  {/* Grille & Chevron */}
+  <rect x="24" y="32" width="16" height="9" rx="1" fill="#090D1A" stroke="#38BDF8" stroke-width="0.8" />
+  <path d="M29 38L32 34L35 38H33.5L32 36L30.5 38H29Z" fill="#10B981" />
+
+  {/* Headlights */}
+  <rect x="18.5" y="38" width="4" height="2.5" rx="0.8" fill="#38BDF8" />
+  <rect x="41.5" y="38" width="4" height="2.5" rx="0.8" fill="#38BDF8" />
+
+  {/* GPS Beacon */}
+  <circle cx="32" cy="7.5" r="1.5" fill="#10B981" />
+</svg>
